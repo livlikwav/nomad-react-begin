@@ -12,7 +12,8 @@
     function App() {
       const [cnt, setCnt] = React.useState(0);
       const onClick = () => {
-        setCnt(cnt + 1);
+        // setCnt(cnt + 1);
+        setCnt((current) => current + 1);
       };
       return (
         <div>
